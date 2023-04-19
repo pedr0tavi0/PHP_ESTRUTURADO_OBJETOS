@@ -7,6 +7,7 @@ class sala_virtual{
 
 
     public function __construct($nome,$disciplina,$quantidade){
+        $this->pessoa[];
         if (is_string($nome)) { 
             $this->nome = $nome;
         } 
@@ -32,7 +33,13 @@ class sala_virtual{
         public function getQuantidade() 
 			{ 
 				return $this->quantidade; 
+                
 			} 
+            public function addPessoas($nome,$sobrenome,$cpf,$idade)
+            {
+             this->pessoas[] = new Pessoa($nome,$sobrenome,$cpf,$idade)
+
+            }
 }
 
 $s1 = new sala_virtual('Diagramas uml','Engenharia de Software',20); 
